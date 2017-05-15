@@ -16,7 +16,7 @@ use Mix.Config
 config :sec_bot_new, SecBotNew.Web.Endpoint,
   on_init: {SecBotNew.Web.Endpoint, :load_from_system_env, []},
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "warm-ravine-32590.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "agile-stream-67999.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
