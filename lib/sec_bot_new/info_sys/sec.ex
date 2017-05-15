@@ -30,7 +30,7 @@ defmodule SecBotNew.InfoSys.Sec do
   end
 
   defp sort_by_date(list) do
-    Enum.sort(list, &(Timex.Date.compare(&1[:date], &2[:date]) == 1))
+    Enum.sort(list, &(Timex.compare(&1[:date], &2[:date]) == 1))
   end
 
   defp reformat_date(list) do
