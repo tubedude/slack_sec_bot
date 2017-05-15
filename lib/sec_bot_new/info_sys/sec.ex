@@ -38,7 +38,7 @@ defmodule SecBotNew.InfoSys.Sec do
       %{date: date} = item
       [month, day, year] = String.split(to_string(date), "/")
       |> Enum.map(&(String.to_integer(&1)))
-     formatted_date = Timex.Date.from({year, month, day})
+     formatted_date = Timex.to_date({year, month, day})
      Map.merge(item, %{date: formatted_date})
     end)
   end
